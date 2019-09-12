@@ -55,7 +55,7 @@
       },
       methods: {
          addPayment() {
-            axios.post('api/payment')
+            this.form.post('api/payment')
             .then(()=>{
                 console.log('Payment Made');
             })

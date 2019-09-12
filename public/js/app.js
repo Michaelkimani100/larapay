@@ -1784,7 +1784,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     addPayment: function addPayment() {
-      axios.post('api/payment').then(function () {
+      this.form.post('api/payment').then(function () {
         console.log('Payment Made');
       })["catch"](function () {
         console.log('Error Making Payment');
